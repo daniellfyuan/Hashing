@@ -1,4 +1,5 @@
 # Hashing
+Author: Daniel Yuan
 Summary: Implementing a hash table to analyze collision handling methods
 
 README - Instructions for the user to use this program.
