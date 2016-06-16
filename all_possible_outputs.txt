@@ -1,0 +1,593 @@
+Sample of all possible outputs from different collision handling methods. The following data sets used the minimal required set of ints provided by the assignment. See farthe below for data from a larger input.
+
+
+Hashing with Linear Probing
+Null Null Null 90123 14763 (5)
+Null Null Null Null Null (10)
+Null 59531 89531 47893 11 (15)
+33975 38531 Null Null 22699 (20)
+Null 12501 72501 42501 12503 (25)
+22705 Null Null Null 99989 (30)
+Null 57391 Null Null 1234 (35)
+Null 13956 35197 Null 22599 (40)
+99999 80800 Null 84763 Null (45)
+18765 56565 Null 78888 Null (50)
+Null 39531 9531 Null Null (55)
+Null Null Null 2698 2699 (60)
+62699 78901 89102 19501 Null (65)
+54545 92345 Null Null Null (70)
+Null 90911 27431 31753 78911 (75)
+Null Null 71717 Null 22999 (80)
+62000 54321 Null 64763 Null (85)
+Null Null 49287 Null Null (90)
+67890 49531 79531 88531 Null (95)
+Null Null Null Null 42699 (100)
+Null 62501 92501 Null Null (105)
+Null Null 26987 Null Null (110)
+Null 81111 Null 47993 Null (115)
+55555 67676 Null 358 37319 (120)
+
+Primary Collisions: 22
+Secondary Collisions: 8
+Time: 1399 ns
+
+
+Hashing with Linear Probing (DIV_MOD = 127)
+22599 49531 64763 31753 89531 (5)
+Null 27431 9531 Null Null (10)
+Null 49287 22999 11 47893 (15)
+88531 92345 62501 35197 Null (20)
+Null 78888 Null Null 62000 (25)
+Null Null 42699 80800 79531 (30)
+Null 2698 2699 14763 78901 (35)
+39531 Null Null Null Null (40)
+99989 Null Null Null 78911 (45)
+92501 Null Null Null Null (50)
+99999 56565 38531 Null 84763 (55)
+12501 55555 12503 Null Null (60)
+Null Null 54545 26987 Null (65)
+Null 33975 Null Null Null (70)
+19501 Null 67890 Null Null (75)
+89102 Null Null Null Null (80)
+90123 Null Null 42501 Null (85)
+81111 Null Null 62699 71717 (90)
+Null 1234 54321 22699 Null (95)
+59531 18765 Null Null 22705 (100)
+Null Null Null Null 358 (105)
+Null 90911 Null 37319 Null (110)
+Null 72501 67676 13956 57391 (115)
+47993 Null Null Null Null (120)
+
+Primary Collisions: 14
+Secondary Collisions: 2
+Time: 467 ns
+
+
+
+Hashing with Quadratic Probing
+Null Null Null 90123 14763 (5)
+Null Null Null Null Null (10)
+Null 59531 89531 47893 11 (15)
+33975 Null 38531 Null 22699 (20)
+Null 12501 72501 12503 42501 (25)
+22705 Null Null Null 99989 (30)
+Null 57391 Null Null 1234 (35)
+Null 13956 35197 Null 22599 (40)
+99999 80800 Null 84763 Null (45)
+18765 56565 Null 78888 Null (50)
+Null 39531 9531 Null Null (55)
+Null Null Null 2698 2699 (60)
+62699 78901 89102 Null 19501 (65)
+54545 92345 Null Null Null (70)
+Null 90911 27431 31753 78911 (75)
+Null Null 71717 Null 22999 (80)
+62000 54321 Null 64763 Null (85)
+Null Null 49287 Null Null (90)
+67890 49531 79531 Null 88531 (95)
+Null Null Null Null 42699 (100)
+Null 62501 92501 Null Null (105)
+Null Null 26987 Null Null (110)
+Null 81111 Null 47993 Null (115)
+55555 67676 Null 358 37319 (120)
+
+Primary Collisions: 18
+Secondary Collisions: 7
+Time: 1866 ns
+
+
+Hashing with Quadratic Probing (DIV_MOD = 127)
+22599 49531 Null 31753 89531 (5)
+Null 27431 9531 Null Null (10)
+64763 49287 22999 88531 47893 (15)
+Null 92345 62501 35197 Null (20)
+Null 78888 Null Null 62000 (25)
+Null 11 42699 80800 79531 (30)
+Null 2698 2699 Null 78901 (35)
+39531 Null 14763 Null Null (40)
+99989 Null Null Null 78911 (45)
+92501 Null Null Null Null (50)
+99999 56565 Null 38531 84763 (55)
+12501 55555 12503 Null Null (60)
+Null Null 54545 26987 Null (65)
+Null 33975 Null Null Null (70)
+19501 Null 67890 Null Null (75)
+89102 Null Null Null Null (80)
+90123 Null Null 42501 Null (85)
+81111 Null Null 62699 71717 (90)
+Null 1234 54321 22699 Null (95)
+59531 18765 Null Null 22705 (100)
+Null Null Null Null 358 (105)
+Null 90911 Null 37319 Null (110)
+Null 72501 67676 13956 57391 (115)
+47993 Null Null Null Null (120)
+
+Primary Collisions: 19
+Secondary Collisions: 1
+Time: 467 ns
+
+
+
+Hashing with Chaining
+72501 99999 42501 90123 56565 (5)
+89531 79531 27431 92501 9531 (10)
+14763 59531 62699 47893 11 (15)
+33975 19501 38531 78911 22699 (20)
+88531 12501 92345 12503 Null (25)
+22705 Null Null Null 99989 (30)
+Null 57391 Null Null 1234 (35)
+Null 13956 35197 Null 22599 (40)
+80800 Null Null 84763 Null (45)
+18765 Null Null 78888 Null (50)
+Null 39531 Null Null Null (55)
+Null Null Null 2698 2699 (60)
+Null 78901 89102 Null Null (65)
+54545 Null Null Null Null (70)
+Null 90911 Null 31753 Null (75)
+Null Null 71717 Null 22999 (80)
+62000 54321 Null 64763 Null (85)
+Null Null 49287 Null Null (90)
+67890 49531 Null Null Null (95)
+Null Null Null Null 42699 (100)
+Null 62501 Null Null Null (105)
+Null Null 26987 Null Null (110)
+Null 81111 Null 47993 Null (115)
+55555 67676 Null 358 37319 (120)
+
+Primary Collisions: 17
+Secondary Collisions: 0
+Time: 467 ns
+
+
+Hashing with Chaining (DIV MOD = 127)
+22599 39531 49531 31753 56565 (5)
+89531 27431 9531 14763 11 (10)
+64763 49287 22999 38531 47893 (15)
+47993 88531 62501 35197 92345 (20)
+Null 78888 Null Null 62000 (25)
+Null Null 42699 80800 79531 (30)
+Null 2698 2699 Null 78901 (35)
+Null Null Null Null Null (40)
+99989 Null Null Null 78911 (45)
+92501 Null Null Null Null (50)
+99999 Null Null Null 84763 (55)
+12501 55555 12503 Null Null (60)
+Null Null 54545 26987 Null (65)
+Null 33975 Null Null Null (70)
+19501 Null 67890 Null Null (75)
+89102 Null Null Null Null (80)
+90123 Null Null 42501 Null (85)
+81111 Null Null 62699 71717 (90)
+Null 1234 54321 22699 Null (95)
+59531 18765 Null Null 22705 (100)
+Null Null Null Null 358 (105)
+Null 90911 Null 37319 Null (110)
+Null 72501 67676 13956 57391 (115)
+Null Null Null Null Null (120)
+
+Primary Collisions: 10
+Secondary Collisions: 2
+Time: 467 ns
+
+
+
+Hashing with Linear Probing, Bucket = 3
+55555 99999 59531 (1)
+Null Null Null (2)
+27431 0 0 (3)
+49531 14763 0 (4)
+1234 78888 0 (5)
+90123 92501 47893 (6)
+49287 0 0 (7)
+39531 0 0 (8)
+22599 71717 62000 (9)
+37319 89102 26987 (10)
+62699 0 0 (11)
+11 0 0 (12)
+88531 0 0 (13)
+72501 81111 92345 (14)
+90911 0 0 (15)
+54545 0 0 (16)
+84763 13956 0 (17)
+62501 78901 0 (18)
+42699 0 0 (19)
+31753 9531 35197 (20)
+Null Null Null (21)
+Null Null Null (22)
+Null Null Null (23)
+47993 0 0 (24)
+64763 0 0 (25)
+42501 0 0 (26)
+22699 67676 56565 (27)
+33975 19501 78911 (28)
+18765 89531 0 (29)
+Null Null Null (30)
+80800 358 0 (31)
+99989 0 0 (32)
+79531 57391 22705 (33)
+2698 38531 0 (34)
+2699 0 0 (35)
+67890 0 0 (36)
+Null Null Null (37)
+12501 54321 0 (38)
+Null Null Null (39)
+22999 12503 0 (40)
+
+Primary Collisions: 3
+Secondary Collisions: 0
+Time: 466 ns
+
+
+Hashing with Quadratic Probing, Bucket = 3
+55555 99999 59531 (1)
+Null Null Null (2)
+27431 0 0 (3)
+49531 14763 0 (4)
+1234 78888 0 (5)
+90123 92501 47893 (6)
+49287 0 0 (7)
+39531 0 0 (8)
+22599 71717 62000 (9)
+37319 89102 26987 (10)
+62699 0 0 (11)
+11 0 0 (12)
+88531 0 0 (13)
+72501 81111 92345 (14)
+90911 0 0 (15)
+54545 0 0 (16)
+84763 13956 0 (17)
+62501 78901 0 (18)
+42699 0 0 (19)
+31753 9531 35197 (20)
+Null Null Null (21)
+Null Null Null (22)
+Null Null Null (23)
+47993 0 0 (24)
+64763 0 0 (25)
+42501 0 0 (26)
+22699 67676 56565 (27)
+33975 19501 78911 (28)
+18765 89531 0 (29)
+Null Null Null (30)
+80800 358 0 (31)
+99989 0 0 (32)
+79531 57391 22705 (33)
+2698 38531 0 (34)
+2699 0 0 (35)
+67890 0 0 (36)
+Null Null Null (37)
+12501 54321 0 (38)
+Null Null Null (39)
+22999 12503 0 (40)
+
+Primary Collisions: 3
+Secondary Collisions: 0
+Time: 0 ns
+
+
+
+
+BELOW ARE DONE WITH MULTIPLICATION HASH FUNCTION.
+
+(USING MULTIPLICATION)
+Hashing with Linear Probing
+2698 80800 67676 13956 1234 (5)
+78888 67890 89102 62000 358 (10)
+Null Null Null Null Null (15)
+Null Null Null Null Null (20)
+Null Null Null Null Null (25)
+Null Null Null Null Null (30)
+Null Null Null Null Null (35)
+Null Null Null Null Null (40)
+Null Null Null Null Null (45)
+Null Null Null Null Null (50)
+Null Null Null Null Null (55)
+Null Null Null Null Null (60)
+12501 84763 22599 55555 72501 (65)
+99999 33975 62501 42501 90911 (70)
+42699 18765 78901 2699 31753 (75)
+22699 59531 90123 39531 49531 (80)
+56565 89531 22999 81111 79531 (85)
+37319 27431 92501 9531 47893 (90)
+14763 62699 57391 54321 35197 (95)
+71717 49287 26987 11 99989 (100)
+64763 19501 12503 22705 38531 (105)
+47993 54545 78911 88531 92345 (110)
+Null Null Null Null Null (115)
+Null Null Null Null Null (120)
+
+Primary Collisions: 58
+Secondary Collisions: 1212
+Time: 2333 ns
+
+
+(USING MULTIPLICATION)
+Table full, unable to store 64763
+Table full, unable to store 19501
+Table full, unable to store 12503
+Table full, unable to store 22705
+Table full, unable to store 38531
+Table full, unable to store 47993
+Table full, unable to store 54545
+Table full, unable to store 62000
+Table full, unable to store 78911
+Table full, unable to store 88531
+Table full, unable to store 92345
+Table full, unable to store 358
+Hashing with Quadratic Probing
+2698 80800 Null 67676 Null (5)
+Null 18765 Null Null Null (10)
+13956 Null Null 99989 Null (15)
+1234 89102 Null 78901 Null (20)
+Null 78888 Null Null Null (25)
+89531 Null Null 67890 Null (30)
+39531 2699 Null 54321 Null (35)
+Null 14763 Null Null Null (40)
+9531 Null Null 92501 Null (45)
+31753 47893 Null 26987 Null (50)
+Null 49531 Null Null Null (55)
+37319 Null Null 49287 Null (60)
+12501 84763 Null 22599 Null (65)
+Null 55555 Null Null Null (70)
+72501 Null Null 56565 Null (75)
+99999 22699 Null 22999 Null (80)
+Null 33975 Null Null Null (85)
+62699 Null Null 62501 Null (90)
+27431 35197 Null 59531 Null (95)
+Null 42501 Null Null Null (100)
+71717 Null Null 11 Null (105)
+90911 81111 Null 79531 Null (110)
+Null 90123 Null Null Null (115)
+42699 Null Null 57391 Null (120)
+
+Primary Collisions: 202
+Secondary Collisions: 2445
+Time: 9797 ns
+
+
+(USING MULTIPLICATION)
+Hashing with Chaining
+84763 22599 2698 55555 72501 (5)
+99999 33975 62501 42501 90911 (10)
+42699 80800 18765 78901 2699 (15)
+31753 22699 67676 59531 13956 (20)
+1234 90123 78888 39531 49531 (25)
+56565 89531 67890 22999 81111 (30)
+79531 37319 27431 92501 9531 (35)
+47893 14763 62699 57391 54321 (40)
+35197 71717 89102 49287 26987 (45)
+11 99989 64763 19501 12503 (50)
+22705 38531 47993 54545 62000 (55)
+78911 88531 92345 358 Null (60)
+12501 Null Null Null Null (65)
+Null Null Null Null Null (70)
+Null Null Null Null Null (75)
+Null Null Null Null Null (80)
+Null Null Null Null Null (85)
+Null Null Null Null Null (90)
+Null Null Null Null Null (95)
+Null Null Null Null Null (100)
+Null Null Null Null Null (105)
+Null Null Null Null Null (110)
+Null Null Null Null Null (115)
+Null Null Null Null Null (120)
+
+Primary Collisions: 49
+Secondary Collisions: 10
+Time: 6998 ns
+
+
+The following data sets were done with my numbers added into the input. I wanted to see what would happen if I introduced more collisions.
+
+Hashing with Linear Probing
+Null 1 2 90123 14763 (5)
+3 4 5 6 7 (10)
+8 59531 89531 47893 11 (15)
+33975 38531 9 10 22699 (20)
+12 12501 72501 42501 12503 (25)
+22705 13 14 15 99989 (30)
+16 57391 17 18 1234 (35)
+19 13956 35197 20 22599 (40)
+99999 80800 789012 84763 901234 (45)
+18765 56565 Null 78888 Null (50)
+567890 39531 9531 Null Null (55)
+Null Null Null 2698 2699 (60)
+62699 78901 89102 19501 678901 (65)
+54545 92345 Null Null 456789 (70)
+Null 90911 27431 31753 78911 (75)
+Null Null 71717 345678 22999 (80)
+62000 54321 Null 64763 890123 (85)
+Null Null 49287 234567 Null (90)
+67890 49531 79531 88531 Null (95)
+Null 123456 Null Null 42699 (100)
+Null 62501 92501 Null Null (105)
+12345 Null 26987 Null Null (110)
+Null 81111 Null 47993 Null (115)
+55555 67676 Null 358 37319 (120)
+
+Primary Collisions: 94
+Secondary Collisions: 137
+Time: 0 ns
+
+
+Hashing with Quadratic Probing
+Null 1 2 90123 14763 (5)
+4 3 6 5 8 (10)
+7 59531 89531 47893 11 (15)
+33975 10 38531 12 22699 (20)
+14 12501 72501 12503 42501 (25)
+22705 16 17 13 99989 (30)
+9 57391 Null 18 1234 (35)
+20 13956 35197 Null 22599 (40)
+99999 80800 Null 84763 901234 (45)
+18765 56565 19 78888 Null (50)
+567890 39531 9531 Null Null (55)
+Null Null 789012 2698 2699 (60)
+62699 78901 89102 Null 19501 (65)
+54545 92345 678901 Null 456789 (70)
+15 90911 27431 31753 78911 (75)
+Null Null 71717 345678 22999 (80)
+62000 54321 Null 64763 890123 (85)
+Null Null 49287 234567 Null (90)
+67890 49531 79531 Null 88531 (95)
+Null 123456 Null Null 42699 (100)
+Null 62501 92501 Null Null (105)
+12345 Null 26987 Null Null (110)
+Null 81111 Null 47993 Null (115)
+55555 67676 Null 358 37319 (120)
+
+Primary Collisions: 55
+Secondary Collisions: 54
+Time: 466 ns
+
+
+Hashing with Chaining
+72501 99999 42501 90123 56565 (5)
+89531 79531 27431 92501 9531 (10)
+14763 59531 62699 47893 11 (15)
+33975 19501 38531 78911 22699 (20)
+88531 12501 92345 12503 1 (25)
+22705 2 3 4 99989 (30)
+5 57391 6 7 1234 (35)
+8 13956 35197 9 22599 (40)
+80800 10 11 84763 12 (45)
+18765 13 14 78888 15 (50)
+16 39531 17 18 19 (55)
+20 234567 567890 2698 2699 (60)
+678901 78901 89102 789012 890123 (65)
+54545 901234 Null Null 456789 (70)
+Null 90911 Null 31753 Null (75)
+Null Null 71717 345678 22999 (80)
+62000 54321 Null 64763 Null (85)
+Null Null 49287 Null Null (90)
+67890 49531 Null Null Null (95)
+Null 123456 Null Null 42699 (100)
+Null 62501 Null Null Null (105)
+12345 Null 26987 Null Null (110)
+Null 81111 Null 47993 Null (115)
+55555 67676 Null 358 37319 (120)
+
+Primary Collisions: 26
+Secondary Collisions: 17
+Time: 0 ns
+
+
+Hashing with Linear Probing (DIV_MOD = 127)
+Null 49531 1 31753 2 (5)
+3 9531 4 5 6 (10)
+7 49287 22999 11 47893 (15)
+88531 92345 62501 35197 8 (20)
+9 78888 10 12 62000 (25)
+13 14 42699 80800 79531 (30)
+15 2698 2699 14763 78901 (35)
+39531 16 17 18 19 (40)
+99989 20 123456 901234 78911 (45)
+92501 12345 Null Null Null (50)
+99999 56565 38531 Null 84763 (55)
+12501 55555 12503 Null Null (60)
+Null Null 54545 26987 Null (65)
+Null 33975 Null Null Null (70)
+19501 Null 67890 567890 Null (75)
+89102 Null Null Null Null (80)
+90123 Null Null 42501 Null (85)
+81111 678901 Null 62699 71717 (90)
+789012 1234 54321 22699 Null (95)
+59531 18765 456789 Null 22705 (100)
+Null Null Null Null 358 (105)
+Null 90911 890123 37319 Null (110)
+Null 72501 67676 13956 57391 (115)
+47993 345678 Null Null Null (120)
+22599 64763 Null 89531 Null (125)
+234567 27431 
+
+Primary Collisions: 140
+Secondary Collisions: 135
+Time: 2799 ns
+
+
+Hashing with Quadratic Probing (DIV_MOD = 127)
+Null 49531 1 31753 3 (5)
+2 9531 4 5 6 (10)
+7 49287 22999 88531 47893 (15)
+9 92345 62501 35197 13 (20)
+10 78888 12 8 62000 (25)
+15 11 42699 80800 79531 (30)
+20 2698 2699 18 78901 (35)
+39531 12345 14763 17 Null (40)
+99989 Null 14 901234 78911 (45)
+92501 Null 19 123456 Null (50)
+99999 56565 16 38531 84763 (55)
+12501 55555 12503 Null Null (60)
+Null Null 54545 26987 Null (65)
+Null 33975 Null Null Null (70)
+19501 Null 67890 567890 Null (75)
+89102 Null Null Null Null (80)
+90123 Null Null 42501 Null (85)
+81111 678901 Null 62699 71717 (90)
+Null 1234 54321 22699 789012 (95)
+59531 18765 456789 Null 22705 (100)
+Null Null Null Null 358 (105)
+Null 90911 890123 37319 Null (110)
+Null 72501 67676 13956 57391 (115)
+47993 Null 345678 Null Null (120)
+22599 64763 Null 89531 Null (125)
+234567 27431 
+
+Primary Collisions: 70
+Secondary Collisions: 41
+Time: 933 ns
+
+
+Hashing with Chaining (DIV_MOD = 127)
+39531 49531 56565 31753 14763 (5)
+11 9531 64763 38531 47993 (10)
+88531 49287 22999 1 47893 (15)
+2 92345 62501 35197 3 (20)
+4 78888 5 6 62000 (25)
+7 8 42699 80800 79531 (30)
+9 2698 2699 10 78901 (35)
+11 12 13 14 15 (40)
+99989 16 17 18 78911 (45)
+92501 19 20 123456 345678 (50)
+99999 789012 901234 12345 84763 (55)
+12501 55555 12503 Null Null (60)
+Null Null 54545 26987 Null (65)
+Null 33975 Null Null Null (70)
+19501 Null 67890 567890 Null (75)
+89102 Null Null Null Null (80)
+90123 Null Null 42501 Null (85)
+81111 678901 Null 62699 71717 (90)
+Null 1234 54321 22699 Null (95)
+59531 18765 456789 Null 22705 (100)
+Null Null Null Null 358 (105)
+Null 90911 890123 37319 Null (110)
+Null 72501 67676 13956 57391 (115)
+Null Null Null Null Null (120)
+22599 Null Null 89531 Null (125)
+234567 27431 
+
+Primary Collisions: 20
+Secondary Collisions: 13
+Time: 3266 ns
+
+
+
